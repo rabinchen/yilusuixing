@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/navigation"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/input_start"
+        android:text="请点击输入起点"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorAccent"
+        android:text="请点击输入终点"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:id="@+id/input_end"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal"
+        android:paddingTop="2dip">
+
+        <CheckBox
+            android:id="@+id/congestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避拥堵"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/avoidhightspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不走高速"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/cost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="躲避收费"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/hightspeed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高速优先"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:text="小提示: 请根据需要点击匹配条件，我们会为您筛选合适路线，然后点击最佳路线，最后点击开始导航即可，此功能正处于测试阶段，祝您旅途开心！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/calculateRute"
+            android:text="①最佳路线"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/startNavigation"
+            android:text="②开始导航"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

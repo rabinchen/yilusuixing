@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginBottom="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <eu.long1.spacetablayout.SpaceTabLayout
+        android:id="@+id/spaceTablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="eu.long1.spacetablayout.SpaceTabLayoutBehavior"
+        app:number_of_tabs="three"
+        app:starting_position="two"
+        app:icon_one="@drawable/ic_tab_two"
+        app:icon_two="@drawable/ic_tab_one"
+        app:icon_three="@drawable/ic_tab_four"
+        app:text_one="导航"
+        app:text_two="识别"
+        app:text_three="天气"/>
+
+</android.support.design.widget.CoordinatorLayout>
